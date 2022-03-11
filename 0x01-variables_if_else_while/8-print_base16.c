@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
  *
@@ -8,21 +6,15 @@
  */
 int main(void)
 {
-	char d = '0';
+	char digit;
 
-	while (d <= '9')
-	{
-		putchar(d);
-		d++;
-	}
+	for (digit = '0'; digit <= '9'; digit++)
+		putchar(digit);
+	
 
-	char c = 'a';
+	for (digit = 'a'; digit <= 'f'; digit++)
+		putchar(digit);
 
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
 
 	putchar('\n');
 	return (0);
