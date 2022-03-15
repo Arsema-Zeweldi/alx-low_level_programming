@@ -1,19 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet  - Print a-z
  *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c = 'a';
+	int c;
 
-	while (c <= 'z')
+	c = 0;
+	while (c < 27)
 	{
-		putchar(c);
+		_putchar(c);
 		c++;
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
