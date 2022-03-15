@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * print_alphabet  - Print a-z
+ * main - Print a-z
  *
  * Return: void.
  */
@@ -8,8 +9,7 @@ void print_alphabet(void)
 {
 	int c;
 
-	c = 0;
-	for (c = 0; c < 27; c++)
+	for (c = 0; c < 26; c++)
 	{
 		_putchar(c);
 	}
