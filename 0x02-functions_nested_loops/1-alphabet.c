@@ -2,17 +2,16 @@
 /**
  * print_alphabet  - Print a-z
  *
- * Return: void
+ * Return: void.
  */
 void print_alphabet(void)
 {
 	int c;
 
 	c = 0;
-	while (c < 27)
+	for (c = 0; c < 27; c++)
 	{
 		_putchar(c);
-		c++;
 	}
 	_putchar('\n');
 }
