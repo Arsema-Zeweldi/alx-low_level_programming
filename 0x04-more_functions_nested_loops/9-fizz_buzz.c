@@ -12,19 +12,19 @@ int main(void)
 	for (c = 1; c <= 100; c++)
 		if (c % 3 == 0)
 		{
-			printf("Fizz\t");
+			printf("Fizz ");
 		}
 		else if (c % 5 == 0)
 		{
-			printf("Buzz\t");
+			printf("Buzz ");
 		}
 		else if (c % 15 == 0)
 		{
-			printf("FizzBuzz\t");
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			printf("%d\t", c);
+			printf("%d ", c);
 		}
 	printf("\n");
 	return (0);
