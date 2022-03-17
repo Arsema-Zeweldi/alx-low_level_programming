@@ -10,7 +10,6 @@ int main(void)
 	int c;
 
 	for (c = 1; c <= 100; c++)
-	{
 		if (c % 3 == 0)
 		{
 			printf("Fizz\t");
@@ -27,7 +26,6 @@ int main(void)
 		{
 			printf("%d\t", c);
 		}
-	}
 	printf("\n");
 	return (0);
 }
