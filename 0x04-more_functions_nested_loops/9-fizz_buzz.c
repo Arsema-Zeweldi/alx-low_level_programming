@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - fizz-buzz test
+ * @void: empty
  * Return: Always 0
  */
 int main(void)
@@ -11,19 +13,19 @@ int main(void)
 	{
 		if (c % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz\t");
 		}
 		else if (c % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz\t");
 		}
 		else if (c % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz\t");
 		}
 		else
 		{
-			printf("%d ", c);
+			printf("%d\t", c);
 		}
 	}
 	printf("\n");
