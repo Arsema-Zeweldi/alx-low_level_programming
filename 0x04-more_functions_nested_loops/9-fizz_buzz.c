@@ -7,25 +7,31 @@
 int main(void)
 {
 	int c;
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
 	for (c = 1; c <= 100; c++)
-		if (c % 15 == 0)
+		if (c == 100)
 		{
-			printf("FizzBuzz ");
+			printf("%s ", b);
+		}
+		else if (c % 15 == 0)
+		{
+			printf("%s ", fb);
 		}
 		else if (c % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("%s ", b);
 		}
 		else if (c % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("%s ", f);
 		}
 		else
 		{
 			printf("%d ", c);
 		}
-	printf("Buzz");
 	printf("\n");
 	return (0);
 }
