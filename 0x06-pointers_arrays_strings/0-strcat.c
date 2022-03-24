@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - concatenates two strings
+ * *_strcat - concentrates two strings
  * @dest: Hello
  * @src: World!
  * Return: dest
