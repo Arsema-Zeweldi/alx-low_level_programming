@@ -2,6 +2,7 @@
 /**
  * check - checks if n is prime or not
  * @c: integer
+ * @n: integer
  * Return: int
  */
 int check(int n, int c)
