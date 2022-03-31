@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 /**
  * wildcmp - comapres two strings
  * @s1: string one
