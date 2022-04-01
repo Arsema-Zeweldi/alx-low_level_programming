@@ -4,7 +4,7 @@
 /**
  * isInteger - checks if c is an integer
  * @s: character array
- * Return: int
+ * Return: 0
  */
 int isInteger(char *s)
 {
@@ -23,7 +23,7 @@ int isInteger(char *s)
  * main - adds positive numbers
  * @argc: size of argv
  * @argv: argument on command line
- * Return: int
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -38,6 +38,6 @@ int main(int argc, char *argv[])
 		}
 		sum += atoi(argv[argc]);
 	}
-	printf("%i\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
