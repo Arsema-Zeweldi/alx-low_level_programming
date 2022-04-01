@@ -8,22 +8,13 @@
  * Return: int
  */
 int main(int argc, char *argv[])
-{
-	int c, mul = 1;
-	
+{	
 	(void)argc;
 	if (argc != 3)
 	{
 		printf("ERROR\n");
 		return (1);
 	}
-	if (argc == 3)
-	{
-		for (c = 1; c < argc; c++)
-		{
-			mul = mul * atoi(argv[c]);
-		}
-		printf("%d\n", mul);
-	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
