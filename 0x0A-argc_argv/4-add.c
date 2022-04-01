@@ -18,6 +18,7 @@ int isInteger(char *s)
 	}
 	return (0);
 }
+
 /**
  * main - adds positive numbers
  * @argc: size of argv
@@ -37,6 +38,6 @@ int main(int argc, char *argv[])
 		}
 		sum += atoi(argv[argc]);
 	}
-	printf("%d\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }
