@@ -13,23 +13,24 @@ char *str_concat(char *s1, char *s2)
 	unsigned int c, d, str3, n = 0;
 
 	if (s1 == NULL)
-	{
 		s1 = '\0';
-	}
 	if (s2 == NULL)
-	{
 		s2 = '\0';
+	c = d = 0;
+	while (s1[c] != '\0')
+	{
+		c++;
+	}
+	while (s2[d] != '\0')
+	{
+		d++;
 	}
 	c = strlen(s1);
 	d = strlen(s2);
 	str3 = c + d;
 	s3 = malloc(str3 * sizeof(char) + 1);
-
 	if (s3 == 0)
-	{
 		return (0);
-	}
-
 	while (*s1 != '\0')
 	{
 		s3[n] = *s1;
@@ -42,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 		n++;
 	}
-
 	s3[n] = '\0';
 	return (s3);
 }
