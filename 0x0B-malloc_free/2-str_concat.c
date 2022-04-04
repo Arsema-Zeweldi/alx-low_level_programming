@@ -29,17 +29,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	while (*s1 != '\0')
+	for (n = 0; n <= str3; n++)
 	{
-		s3[n] = *s1;
-		s1++;
-		n++;
-	}
-	while (*s2 != '\0')
-	{
-		s3[n] = *s2;
-		s2++;
-		n++;
+		if (n < c)
+			s3[c] = s1[c];
+		else
+			s3[c] = s2[n - c];
 	}
 
 	s3[n] = '\0';
