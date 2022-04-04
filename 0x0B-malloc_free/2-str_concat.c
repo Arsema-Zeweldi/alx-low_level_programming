@@ -25,16 +25,17 @@ char *str_concat(char *s1, char *s2)
 	str3 = c + d;
 	s3 = malloc(str3 * sizeof(char) + 1);
 
-	if (s3 == 0)
+	while (*s1 != '\0')
 	{
-		return (0);
+		s3[n] = *s1;
+		s1++;
+		n++;
 	}
-	for (n = 0; n <= str3; n++)
+	while (*s2 != '\0')
 	{
-		if (n < c)
-			s3[c] = s1[c];
-		else
-			s3[c] = s2[n - c];
+		s3[n] = *s2;
+		s2++;
+		n++;
 	}
 
 	s3[n] = '\0';
