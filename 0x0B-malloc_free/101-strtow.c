@@ -52,7 +52,7 @@ char **strtow(char *str)
 			d = 0;
 			while (str[d] != ' ')
 				d++;
-			ptr[c] = malloc(sizeof(char) * (d + 1));
+			ptr = malloc(sizeof(char) * (d + 1));
 			if (ptr[c] == NULL)
 			{
 				while (--c >= 0)
