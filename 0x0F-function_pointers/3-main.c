@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(98);
 	}
 
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(1);
+		exit(99);
 	}
 
 	func_p = get_op_func(argv[2]);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	if (func_p == NULL)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(99);
 	}
 
 	printf("%d\n", func_p(atoi(argv[1]), atoi(argv[3])));
