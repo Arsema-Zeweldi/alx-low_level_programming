@@ -6,15 +6,21 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
+
+void print_int(va_list ap);
+void print_float(va_list ap);
+void print_char(va_list ap);
+void print_str(va_list ap);
+
 /**
- * struct typ - Struct operators
+ * struct printTypeStruct - Struct operators
  *
- * @c: Char
- * @tp: The function associated
+ * @type: Char
+ * @printer: The function associated
  */
 typedef struct typ
 {
-	char *c;
-	void (*tp)(va_list var);
-} typ_t;
+	char *type;
+	void (*printer)(va_list);
+} printTypeStruct;
 #endif
