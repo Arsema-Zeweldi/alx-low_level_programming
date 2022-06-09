@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * dlistint_len - prints the number of elements in a linked dlistint_t list
- * @*h: pointer
+ * @h: pointer
  * Return: size_t
  */
 size_t dlistint_len(const dlistint_t *h)

@@ -4,7 +4,7 @@
 
 /**
  * add_dnodeint_end - add a new node at the end of the dlistint_t list
- * @**head: beginning of the doubly linked list
+ * @head: beginning of the doubly linked list
  * @n: integer
  * Return: dlistint_t
  */

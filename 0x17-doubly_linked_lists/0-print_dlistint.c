@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * print_dlistint - prints all the elements in the doubly linked list
- * @*h: pointer to node
+ * @h: pointer to node
  * Return: size_t
  */
 size_t print_dlistint(const dlistint_t *h)
