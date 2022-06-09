@@ -7,6 +7,7 @@
  * @h: head of dlistint_t
  * @idx: unsigned int
  * @n: unsigned int
+ * Return: dlistint_t
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
